@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qpwo/capacitor-callkeep.git"
+    "url": "git+https://github.com/usamaejaz/capacitor-callkeep.git"
   },
   "bugs": {
-    "url": "https://github.com/qpwo/capacitor-callkeep/issues"
+    "url": "https://github.com/usamaejaz/capacitor-callkeep/issues"
   },
   "keywords": [
     "capacitor",
