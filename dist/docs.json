@@ -1,0 +1,1087 @@
+{
+  "api": {
+    "name": "CapCallKeepPlugin",
+    "slug": "capcallkeepplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "addListener",
+        "signature": "(type: 'endCall', l: L<UUID>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"endCall\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: UUID) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "UUID"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'answerCall', l: L<UUID>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"answerCall\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: UUID) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "UUID"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'toggleHold', l: L<UUID & { hold: boolean; }>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"toggleHold\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: UUID & { hold: boolean; }) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "UUID"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'setMutedCall', l: L<UUID & { muted: boolean; }>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"setMutedCall\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: UUID & { muted: boolean; }) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "UUID"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'DTMFAction', l: L<UUID & { digits: string; }>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"DTMFAction\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: UUID & { digits: string; }) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "UUID"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'startCall', l: L<CallInfo>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"startCall\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: CallInfo) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "CallInfo"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'activateAudioSession', l: L<void>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"activateAudioSession\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: void) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'checkReachability', l: L<void>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"checkReachability\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: void) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'showIncomingCallUi', l: L<CallInfo>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"showIncomingCallUi\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: CallInfo) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "NOTE: Only triggered if self managed",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "CallInfo"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'silenceIncomingCall', l: L<CallInfo>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"silenceIncomingCall\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: CallInfo) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PLH",
+          "L",
+          "CallInfo"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(type: 'registration', l: L<{ token: string; }>) => PLH",
+        "parameters": [
+          {
+            "name": "type",
+            "docs": "",
+            "type": "\"registration\""
+          },
+          {
+            "name": "l",
+            "docs": "",
+            "type": "(t: { token: string; }) => void"
+          }
+        ],
+        "returns": "Promise<PluginListenerHandle> & PluginListenerHandle",
+        "tags": [],
+        "docs": "iOS only",
+        "complexTypes": [
+          "PLH",
+          "L"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "setupAndroid",
+        "signature": "(options: AndroidOptions) => PV",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "AndroidOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "AndroidOptions"
+        ],
+        "slug": "setupandroid"
+      },
+      {
+        "name": "supportConnectionService",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "supportconnectionservice"
+      },
+      {
+        "name": "registerPhoneAccount",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "registerphoneaccount"
+      },
+      {
+        "name": "hasPhoneAccount",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "hasphoneaccount"
+      },
+      {
+        "name": "hasDefaultPhoneAccount",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "hasdefaultphoneaccount"
+      },
+      {
+        "name": "checkPhoneAccountEnabled",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "checkphoneaccountenabled"
+      },
+      {
+        "name": "toggleAudioRouteSpeaker",
+        "signature": "(o: { uuid: string; routeSpeaker: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; routeSpeaker: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "toggleaudioroutespeaker"
+      },
+      {
+        "name": "setAvailable",
+        "signature": "(o: { active: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ active: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setavailable"
+      },
+      {
+        "name": "registerAndroidEvents",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "registerandroidevents"
+      },
+      {
+        "name": "isConnectionServiceAvailable",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "isconnectionserviceavailable"
+      },
+      {
+        "name": "rejectCall",
+        "signature": "(o: { uuid: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "rejectcall"
+      },
+      {
+        "name": "hasOutgoingCall",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "hasoutgoingcall"
+      },
+      {
+        "name": "setForegroundServiceSettings",
+        "signature": "(o: { settings: Obj; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ settings: Record<string, string>; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "Obj"
+        ],
+        "slug": "setforegroundservicesettings"
+      },
+      {
+        "name": "canMakeMultipleCalls",
+        "signature": "(o: { allow: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ allow: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "canmakemultiplecalls"
+      },
+      {
+        "name": "setCurrentCallActive",
+        "signature": "(o: { callUUID: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ callUUID: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setcurrentcallactive"
+      },
+      {
+        "name": "backToForeground",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "backtoforeground"
+      },
+      {
+        "name": "setupIOS",
+        "signature": "(options: IOSOptions) => PV",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "IOSOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "IOSOptions"
+        ],
+        "slug": "setupios"
+      },
+      {
+        "name": "reportConnectedOutgoingCallWithUUID",
+        "signature": "(args: { uuid: string; }) => PV",
+        "parameters": [
+          {
+            "name": "args",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "reportconnectedoutgoingcallwithuuid"
+      },
+      {
+        "name": "reportConnectingOutgoingCallWithUUID",
+        "signature": "(o: { uuid: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "reportconnectingoutgoingcallwithuuid"
+      },
+      {
+        "name": "isCallActive",
+        "signature": "(o: { uuid: string; }) => PB",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "iscallactive"
+      },
+      {
+        "name": "setMutedCall",
+        "signature": "(o: { uuid: string; muted: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; muted: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setmutedcall"
+      },
+      {
+        "name": "getInitialEvents",
+        "signature": "() => Promise<{ name: string; body: string; }[]>",
+        "parameters": [],
+        "returns": "Promise<{ name: string; body: string; }[]>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getinitialevents"
+      },
+      {
+        "name": "getCalls",
+        "signature": "() => Promise<Call[]>",
+        "parameters": [],
+        "returns": "Promise<Call[]>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "Call"
+        ],
+        "slug": "getcalls"
+      },
+      {
+        "name": "checkIfBusy",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "checkifbusy"
+      },
+      {
+        "name": "checkSpeaker",
+        "signature": "() => PB",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PB"
+        ],
+        "slug": "checkspeaker"
+      },
+      {
+        "name": "checkPermissions",
+        "signature": "() => Promise<PermissionStatus>",
+        "parameters": [],
+        "returns": "Promise<PermissionStatus>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PermissionStatus"
+        ],
+        "slug": "checkpermissions"
+      },
+      {
+        "name": "requestPermissions",
+        "signature": "() => Promise<PermissionStatus>",
+        "parameters": [],
+        "returns": "Promise<PermissionStatus>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PermissionStatus"
+        ],
+        "slug": "requestpermissions"
+      },
+      {
+        "name": "answerIncomingCall",
+        "signature": "(o: { uuid: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "answerincomingcall"
+      },
+      {
+        "name": "displayIncomingCall",
+        "signature": "(o: { uuid: string; number: string; callerName: string; handleType?: HandleType; hasVideo?: boolean; options?: IncomingCallOptions; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; number: string; callerName: string; handleType?: \"number\" | \"generic\" | \"email\" | undefined; hasVideo?: boolean | undefined; options?: IncomingCallOptions | undefined; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "HandleType",
+          "IncomingCallOptions"
+        ],
+        "slug": "displayincomingcall"
+      },
+      {
+        "name": "startCall",
+        "signature": "(o: { uuid: string; handle: string; contactIdentifier?: string; handleType?: HandleType; hasVideo?: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; handle: string; contactIdentifier?: string | undefined; handleType?: \"number\" | \"generic\" | \"email\" | undefined; hasVideo?: boolean | undefined; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "HandleType"
+        ],
+        "slug": "startcall"
+      },
+      {
+        "name": "updateDisplay",
+        "signature": "(o: { uuid: string; displayName: string; handle: string; options?: IncomingCallOptions; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; displayName: string; handle: string; options?: IncomingCallOptions | undefined; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV",
+          "IncomingCallOptions"
+        ],
+        "slug": "updatedisplay"
+      },
+      {
+        "name": "reportEndCallWithUUID",
+        "signature": "(o: { uuid: string; reason: number; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; reason: number; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "reportendcallwithuuid"
+      },
+      {
+        "name": "endCall",
+        "signature": "(o: { uuid: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "endcall"
+      },
+      {
+        "name": "endAllCalls",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "endallcalls"
+      },
+      {
+        "name": "setReachable",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setreachable"
+      },
+      {
+        "name": "getAudioRoutes",
+        "signature": "() => PV",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "getaudioroutes"
+      },
+      {
+        "name": "setAudioRoute",
+        "signature": "(o: { uuid: string; inputName: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; inputName: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setaudioroute"
+      },
+      {
+        "name": "setOnHold",
+        "signature": "(o: { uuid: string; held: boolean; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; held: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "setonhold"
+      },
+      {
+        "name": "sendDTMF",
+        "signature": "(o: { uuid: string; key: string; }) => PV",
+        "parameters": [
+          {
+            "name": "o",
+            "docs": "",
+            "type": "{ uuid: string; key: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "sendDTMF is used to send DTMF tones to the PBX.",
+        "complexTypes": [
+          "PV"
+        ],
+        "slug": "senddtmf"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "AndroidOptions",
+      "slug": "androidoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "selfManaged",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "imageName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "foregroundService",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ channelId: string; channelName: string; notificationTitle: string; notificationIcon: string; } | undefined"
+        }
+      ]
+    },
+    {
+      "name": "IOSOptions",
+      "slug": "iosoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "appName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "imageName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "supportsVideo",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "maximumCallGroups",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "maximumCallsPerCallGroup",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "ringtoneSound",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "includesCallsInRecents",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "Call",
+      "slug": "call",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "callUUID",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "outgoing",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "onHold",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "hasConnected",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "hasEnded",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "PermissionStatus",
+      "slug": "permissionstatus",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "readPhoneNumbers",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PermissionState"
+          ],
+          "type": "\"prompt\" | \"prompt-with-rationale\" | \"granted\" | \"denied\""
+        },
+        {
+          "name": "readPhoneState",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PermissionState"
+          ],
+          "type": "\"prompt\" | \"prompt-with-rationale\" | \"granted\" | \"denied\""
+        },
+        {
+          "name": "manageOwnCalls",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PermissionState"
+          ],
+          "type": "\"prompt\" | \"prompt-with-rationale\" | \"granted\" | \"denied\""
+        },
+        {
+          "name": "callPhone",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PermissionState"
+          ],
+          "type": "\"prompt\" | \"prompt-with-rationale\" | \"granted\" | \"denied\""
+        },
+        {
+          "name": "recordAudio",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "PermissionState"
+          ],
+          "type": "\"prompt\" | \"prompt-with-rationale\" | \"granted\" | \"denied\""
+        }
+      ]
+    },
+    {
+      "name": "IncomingCallOptions",
+      "slug": "incomingcalloptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "ios",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "{ supportsHolding?: boolean | undefined; supportsDTMF?: boolean | undefined; supportsGrouping?: boolean | undefined; supportsUngrouping?: boolean | undefined; } | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": []
+}

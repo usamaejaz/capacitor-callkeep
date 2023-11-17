@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"AAkIA,sCAAsC;AACtC,8FAA8F;AAE9F,MAAM,CAAC,MAAM,SAAS,GAAG;IACvB,gBAAgB,EAAE;QAChB,MAAM,EAAE,CAAC;QACT,YAAY,EAAE,CAAC;QACf,UAAU,EAAE,CAAC;QACb,kBAAkB,EAAE,CAAC;QACrB,kBAAkB,EAAE,CAAC,GAAG,CAAC;QACzB,MAAM,EAAE,CAAC,GAAG,CAAC;KACd;CACF,CAAC"}
